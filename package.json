@@ -1,6 +1,6 @@
 {
-  "name": "@shun1121/library-sample",
-  "version": "0.0.3",
+  "name": "@shun1121/react-component-library",
+  "version": "0.0.4",
   "description": "A react component library",
   "scripts": {
     "rollup": "rollup -c",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shun1121/library-sample.git"
+    "url": "git+https://github.com/shun1121/react-component-library.git"
   },
   "author": "Shun",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shun1121/library-sample/issues"
+    "url": "https://github.com/shun1121/react-component-library/issues"
   },
-  "homepage": "https://github.com/shun1121/library-sample#readme",
+  "homepage": "https://github.com/shun1121/react-component-library#readme",
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@babel/preset-env": "^7.20.2",
