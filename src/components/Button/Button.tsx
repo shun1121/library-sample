@@ -1,18 +1,22 @@
 import React from "react";
-// import './Button.css';
 
-interface ButtonProp {
+interface ButtonProps {
   label: string;
-  color?: string;
+  vividness?: "light" | "default";
   size?: "small" | "middle";
 }
 
-const Button = (props: ButtonProp) => {
+const Button = (props: ButtonProps) => {
   return (
     <button
-      className={`${props.color ? props.color : ""} ${
-        props.size === "middle" ? "px-5 py-1" : "px-3 py-1 text-sm"
-      }`}
+      className={`
+        ${
+          props.vividness === "light"
+            ? `bg-red-light`
+            : "bg-red-default"
+        }
+        ${props.size === "middle" ? "px-5 py-1" : "px-3 py-1 text-sm"}
+      `}
     >
       {props.label}
     </button>
@@ -20,4 +24,4 @@ const Button = (props: ButtonProp) => {
 };
 
 export default Button;
-export type { ButtonProp };
+export type { ButtonProps };
