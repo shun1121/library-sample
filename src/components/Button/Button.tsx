@@ -1,24 +1,14 @@
-import React from "react";
+import React  from "react";
+import { ButtonProps } from "./Button.types";
+import { getColor } from "./Button.styles";
 
-interface ButtonProps {
-  label: string;
-  vividness?: "light" | "default";
-  size?: "small" | "middle";
-}
-
-const Button = (props: ButtonProps) => {
+const Button = ({ color, text}: ButtonProps) => {
+  const colorStyle = getColor(color)
   return (
     <button
-      className={`
-        ${
-          props.vividness === "light"
-            ? `bg-red-light`
-            : "bg-red-default"
-        }
-        ${props.size === "middle" ? "px-5 py-1" : "px-3 py-1 text-sm"}
-      `}
+      className={`${colorStyle}`}
     >
-      {props.label}
+      {text}
     </button>
   );
 };
