@@ -1,13 +1,14 @@
 import React  from "react";
 import { ButtonProps } from "./Button.types";
-import { getColor } from "./Button.styles";
+import { getColor, getSize } from "./Button.styles";
 
-const Button = ({ color, text, ...props}: ButtonProps) => {
+const Button = ({ color, text, size, ...props}: ButtonProps) => {
   const colorStyle = getColor(color)
+  const sizeStyle = getSize(size)
   
   return (
     <button
-      className={`${colorStyle}`}
+      className={`${colorStyle} ${sizeStyle}`}
       {...props}
     >
       {text}
