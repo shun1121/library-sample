@@ -2,11 +2,13 @@ import React  from "react";
 import { ButtonProps } from "./Button.types";
 import { getColor } from "./Button.styles";
 
-const Button = ({ color, text}: ButtonProps) => {
+const Button = ({ color, text, ...props}: ButtonProps) => {
   const colorStyle = getColor(color)
+  
   return (
     <button
       className={`${colorStyle}`}
+      {...props}
     >
       {text}
     </button>

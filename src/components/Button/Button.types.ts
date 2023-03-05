@@ -11,4 +11,5 @@ export interface ButtonProps {
   textSize?: 'none' | 'center' | 'lg'
   textAlign?: 'left' | 'center' | 'right'
   shape?: 'none' | 'rounded' | 'square'
+  onClick?: () => void
 }
