@@ -10,7 +10,7 @@ export const getColor = (colorKey: ButtonProps["color"]) =>
 
 export const getSize = (sizeKey: ButtonProps["size"]) =>
   new Map<ButtonProps["size"], string>([
-    ["sm", "w-32 block"],
-    ["md", "w-60 block"],
-    ["full", "w-full block"],
+    ["sm", "w-32 px-3 py-2 block"],
+    ["md", "w-60 px-4 py-3 block"],
+    ["full", "w-full px-5 py-4 block"],
   ]).get(sizeKey);

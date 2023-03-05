@@ -14,6 +14,7 @@ export const HelloWorld = Template.bind({});
 HelloWorld.args = {
   text: 'Hello World',
   color: 'primary',
+  size: 'md',
 };
 
 export const ClickMe = Template.bind({});
