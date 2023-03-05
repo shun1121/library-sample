@@ -5,11 +5,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        red: {
-          light: '#FFBABA',
-          default: '#DA282A',
-          dark: '#991B1A',
-        },
+        primary: '#3EA8FF',
+        primary_hover: '#2183FD',
+        success: '#55C502',
+        success_hover: '#46A901',
+        danger: '#E30006',
+        danger_hover: '#c90003',
       }
     },
   },
