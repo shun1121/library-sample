@@ -6,6 +6,12 @@ import Button from './Button';
 export default {
   title: 'ReactComponentLibrary/Button',
   component: Button,
+  argTypes: {
+    color: {
+      options: ['primary', 'success', 'danger'],
+      control: { type: 'select' },
+    },
+  }
 } as ComponentMeta<typeof Button>;
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
