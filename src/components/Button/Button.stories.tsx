@@ -17,6 +17,7 @@ HelloWorld.args = {
   size: 'md',
   shape: 'default',
   textSize: 'md',
+  textAlign: 'left'
 };
 
 export const ClickMe = Template.bind({});

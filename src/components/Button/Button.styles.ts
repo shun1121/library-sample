@@ -29,3 +29,10 @@ export const getTextSize = (textSizeKey: ButtonProps['textSize']) =>
     ['md', 'text-base'],
     ['lg', 'text-lg'],
   ]).get(textSizeKey);
+
+export const getPositoin = (positionKey: ButtonProps['textAlign']) =>
+  new Map<ButtonProps['textAlign'], string>([
+    ['left', 'text-left'],
+    ['center', 'text-center'],
+    ['right', 'text-right'],
+  ]).get(positionKey);
