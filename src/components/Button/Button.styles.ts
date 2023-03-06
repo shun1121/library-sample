@@ -2,7 +2,6 @@ import { ButtonProps } from "./Button.types";
 
 export const getColor = (colorKey: ButtonProps["color"]) =>
   new Map<ButtonProps["color"], string>([
-    ["none", ""],
     ["primary", "text-white bg-primary hover:bg-primary_hover"],
     ["danger", "text-white bg-danger hover:bg-danger_hover"],
     ["success", "text-white bg-success hover:bg-success_hover"],
@@ -18,9 +17,9 @@ export const getSize = (sizeKey: ButtonProps["size"]) =>
 export const getShape = (shapeKey: ButtonProps['shape']) =>
   new Map<ButtonProps['shape'], string>([
     ['default', 'rounded'],
-    ['md', 'rounded-md'],
-    ['lg', 'rounded-lg'],
-    ['full', 'rounded-full'],
+    ['rounded-md', 'rounded-md'],
+    ['rounded-lg', 'rounded-lg'],
+    ['rounded-full', 'rounded-full'],
   ]).get(shapeKey);
 
 export const getTextSize = (textSizeKey: ButtonProps['textSize']) =>
