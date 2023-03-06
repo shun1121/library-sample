@@ -22,3 +22,10 @@ export const getShape = (shapeKey: ButtonProps['shape']) =>
     ['lg', 'rounded-lg'],
     ['full', 'rounded-full'],
   ]).get(shapeKey);
+
+export const getTextSize = (textSizeKey: ButtonProps['textSize']) =>
+  new Map<ButtonProps['textSize'], string>([
+    ['sm', 'text-sm'],
+    ['md', 'text-base'],
+    ['lg', 'text-lg'],
+  ]).get(textSizeKey);

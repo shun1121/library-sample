@@ -8,7 +8,7 @@ export interface ButtonProps {
     | 'success'
     | 'danger';
   size?: 'sm' | 'md' | 'full'
-  textSize?: 'none' | 'center' | 'lg'
+  textSize?: 'sm' | 'md' | 'lg'
   textAlign?: 'left' | 'center' | 'right'
   shape?: 'default' | 'md' | 'lg' | 'full'
   onClick?: () => void
