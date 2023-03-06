@@ -9,7 +9,6 @@ export interface ButtonProps {
     | 'danger';
   size?: 'sm' | 'md' | 'full'
   textSize?: 'sm' | 'md' | 'lg'
-  textAlign?: 'left' | 'center' | 'right'
   shape?: 'default' | 'md' | 'lg' | 'full'
   onClick?: () => void
 }
