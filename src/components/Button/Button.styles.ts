@@ -14,3 +14,11 @@ export const getSize = (sizeKey: ButtonProps["size"]) =>
     ["md", "w-60 px-4 py-3 block"],
     ["full", "w-full px-5 py-4 block"],
   ]).get(sizeKey);
+
+export const getShape = (shapeKey: ButtonProps['shape']) =>
+  new Map<ButtonProps['shape'], string>([
+    ['default', 'rounded'],
+    ['md', 'rounded-md'],
+    ['lg', 'rounded-lg'],
+    ['full', 'rounded-full'],
+  ]).get(shapeKey);

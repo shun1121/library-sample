@@ -10,6 +10,6 @@ export interface ButtonProps {
   size?: 'sm' | 'md' | 'full'
   textSize?: 'none' | 'center' | 'lg'
   textAlign?: 'left' | 'center' | 'right'
-  shape?: 'none' | 'rounded' | 'square'
+  shape?: 'default' | 'md' | 'lg' | 'full'
   onClick?: () => void
 }
