@@ -8,14 +8,25 @@ const Button = ({ color, text, size, shape, textSize, outline, suffix, ...props}
   const shapeStyle = getShape(shape)
   const textSizeStyle = getTextSize(textSize)
   const outlineStyle = getOutline(outline)
+  const suffixStyle = "flex items-center justify-center"
   
   return (
-    <button
-      className={`${colorStyle} ${sizeStyle} ${shapeStyle} ${textSizeStyle} ${outlineStyle}`}
-      {...props}
-    >
-      {suffix ? (<span>{text}{suffix}</span>):<span>{text}</span>}
-    </button>
+    suffix ? (
+      <button
+        className={`${colorStyle} ${sizeStyle} ${shapeStyle} ${textSizeStyle} ${outlineStyle} ${suffixStyle}`}
+        {...props}
+      >
+        <span>{text}</span>
+        <span className="ml-1">{suffix}</span>
+      </button>
+    ) : (
+      <button
+        className={`${colorStyle} ${sizeStyle} ${shapeStyle} ${textSizeStyle} ${outlineStyle} ${suffixStyle}`}
+        {...props}
+      >
+        {text}
+      </button>
+    )
   );
 };
 
