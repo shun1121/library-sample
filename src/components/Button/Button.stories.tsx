@@ -31,4 +31,9 @@ HelloWorld.args = {
 export const ClickMe = Template.bind({});
 ClickMe.args = {
   text: "Click Me",
+  color: "primary",
+  size: "md",
+  shape: "default",
+  textSize: "md",
+  outline: "none",
 };
