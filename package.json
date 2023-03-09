@@ -61,5 +61,8 @@
   "types": "dist/index.d.ts",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/shun1121"
+  },
+  "dependencies": {
+    "react-icons": "^4.8.0"
   }
 }
