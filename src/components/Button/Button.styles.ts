@@ -1,7 +1,7 @@
 import { ButtonProps } from './Button.types'
 
-export const getColor = (colorKey: ButtonProps['color']) =>
-  new Map<ButtonProps['color'], string>([
+export const getBgColor = (colorKey: ButtonProps['bgColor']) =>
+  new Map<ButtonProps['bgColor'], string>([
     ['none', ''],
     ['primary', 'text-white bg-primary hover:bg-primary_hover'],
     ['danger', 'text-white bg-danger hover:bg-danger_hover'],

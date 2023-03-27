@@ -18,11 +18,11 @@ export default {
 export const _Button: ComponentStory<typeof Button> = (args) => (
   <>
     <div className="flex gap-4">
-      <Button {...args} text="Button" color="primary" size="md" textSize="md" />
+      <Button {...args} text="Button" bgColor="primary" size="md" textSize="md" />
       <Button
         {...args}
         text="Button"
-        color="primary"
+        bgColor="primary"
         size="md"
         textSize="md"
         shape="rounded-full"
@@ -30,7 +30,7 @@ export const _Button: ComponentStory<typeof Button> = (args) => (
       <Button
         {...args}
         text="Button"
-        color="none"
+        bgColor="none"
         size="md"
         textSize="md"
         shape="default"
@@ -42,7 +42,7 @@ export const _Button: ComponentStory<typeof Button> = (args) => (
     <Button
       {...args}
       text="Button"
-      color="danger"
+      bgColor="danger"
       size="sm"
       shape="default"
       textSize="sm"
@@ -51,7 +51,7 @@ export const _Button: ComponentStory<typeof Button> = (args) => (
     <Button
       {...args}
       text="Button"
-      color="danger"
+      bgColor="danger"
       size="md"
       shape="default"
       textSize="md"
@@ -60,7 +60,7 @@ export const _Button: ComponentStory<typeof Button> = (args) => (
     <Button
       {...args}
       text="Button"
-      color="danger"
+      bgColor="danger"
       size="full"
       shape="rounded-lg"
       textSize="lg"
@@ -69,7 +69,7 @@ export const _Button: ComponentStory<typeof Button> = (args) => (
     <Button
       {...args}
       text="Button"
-      color="success"
+      bgColor="success"
       size="sm"
       shape="default"
       textSize="sm"
@@ -79,7 +79,7 @@ export const _Button: ComponentStory<typeof Button> = (args) => (
     <Button
       {...args}
       text="Button"
-      color="success"
+      bgColor="success"
       size="sm"
       shape="rounded-full"
       textSize="sm"

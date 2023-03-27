@@ -1,7 +1,7 @@
 import React from 'react'
 import { ButtonProps } from './Button.types'
 import {
-  getColor,
+  getBgColor,
   getOutline,
   getShape,
   getSize,
@@ -10,7 +10,7 @@ import {
 } from './Button.styles'
 
 const Button = ({
-  color,
+  bgColor,
   text,
   size,
   textColor,
@@ -20,7 +20,7 @@ const Button = ({
   suffix,
   ...props
 }: ButtonProps) => {
-  const colorStyle = getColor(color)
+  const colorStyle = getBgColor(bgColor)
   const sizeStyle = getSize(size)
   const shapeStyle = getShape(shape)
   const textSizeStyle = getTextSize(textSize)
