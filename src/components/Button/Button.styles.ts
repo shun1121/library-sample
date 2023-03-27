@@ -15,6 +15,13 @@ export const getSize = (sizeKey: ButtonProps['size']) =>
     ['full', 'w-full px-5 py-4 block'],
   ]).get(sizeKey)
 
+export const getTextColor = (textColorKey: ButtonProps['textColor']) =>
+  new Map<ButtonProps['textColor'], string>([
+    ['primary', 'text-primary'],
+    ['danger', 'text-danger'],
+    ['success', 'text-success'],
+  ]).get(textColorKey)
+
 export const getShape = (shapeKey: ButtonProps['shape']) =>
   new Map<ButtonProps['shape'], string>([
     ['default', 'rounded'],

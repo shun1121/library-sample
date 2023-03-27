@@ -35,6 +35,7 @@ export const _Button: ComponentStory<typeof Button> = (args) => (
         textSize="md"
         shape="default"
         outline="outline-primary"
+        textColor='primary'
       />
     </div>
     <br />
