@@ -9,4 +9,4 @@ export interface ButtonProps {
   outline?: 'none' | 'outline-primary' | 'outline-success' | 'outline-danger'
   suffix?: string | ReactNode
   onClick?: () => void
-};
+}
