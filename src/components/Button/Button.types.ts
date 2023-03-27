@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 
 export interface ButtonProps {
   text: string | ReactNode
-  color: 'none' | 'primary' | 'success' | 'danger'
+  bgColor: 'none' | 'primary' | 'success' | 'danger'
   size?: 'sm' | 'md' | 'full'
   textSize?: 'sm' | 'md' | 'lg'
   textColor?: 'primary' | 'success' | 'danger'
