@@ -1,9 +1,10 @@
 import React from 'react'
-import { getBorderColor } from './Input.styles'
+import { getBorderColor, getWidth } from './Input.styles'
 import { InputProps } from './Input.types'
 
-const Input = ({ placeholder, borderColor, prefix, suffix, label }: InputProps) => {
+const Input = ({ placeholder, borderColor, prefix, suffix, label, width }: InputProps) => {
   const colorStyle = getBorderColor(borderColor)
+  const widthStyle = getWidth(width)
   const prefixStyle = 'flex items-center justify-center'
   return (
     <div className="relative">
@@ -16,7 +17,7 @@ const Input = ({ placeholder, borderColor, prefix, suffix, label }: InputProps) 
       <input
         type="text"
         placeholder={placeholder}
-        className={colorStyle}
+        className={`${colorStyle} ${widthStyle}`}
         prefix={prefixStyle}
       />
       {suffix && (
