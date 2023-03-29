@@ -6,4 +6,5 @@ export type InputProps = {
   prefix?: ReactNode
   suffix?: ReactNode
   label?: string
+  width?: 'sm' | 'md' | 'lg'
 }
