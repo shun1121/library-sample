@@ -18,7 +18,13 @@ export default {
 export const _Button: ComponentStory<typeof Button> = (args) => (
   <>
     <div className="flex gap-4">
-      <Button {...args} text="Button" bgColor="primary" size="md" textSize="md" />
+      <Button
+        {...args}
+        text="Button"
+        bgColor="primary"
+        size="md"
+        textSize="md"
+      />
       <Button
         {...args}
         text="Button"
@@ -35,7 +41,7 @@ export const _Button: ComponentStory<typeof Button> = (args) => (
         textSize="md"
         shape="default"
         outline="outline-primary"
-        textColor='primary'
+        textColor="primary"
       />
     </div>
     <br />
