@@ -5,6 +5,6 @@ import Input from './Input'
 
 describe('Input', () => {
   test('renders the Input component', () => {
-    render(<Input placeholder='テキスト入力' borderColor="default" />)
+    render(<Input placeholder="テキスト入力" borderColor="default" />)
   })
 })
