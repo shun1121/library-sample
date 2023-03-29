@@ -14,6 +14,7 @@ export const _Input: ComponentStory<typeof Input> = (args) => (
     <div className="flex gap-4">
       <Input placeholder="テキスト入力" borderColor="default" {...args} />
       <Input borderColor="default" prefix={<GoSearch />} {...args} />
+      <Input borderColor="default" suffix={<GoSearch />} {...args} />
     </div>
     <br />
     <Input borderColor="default" label="テキストを入力してください。" />
