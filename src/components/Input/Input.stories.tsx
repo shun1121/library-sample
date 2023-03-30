@@ -24,5 +24,7 @@ export const _Input: ComponentStory<typeof Input> = (args) => (
     </div>
     <br />
     <Input borderColor="default" label="テキストを入力してください。" />
+    <br />
+    <Input borderColor="default" width='sm' shape='rounded-md' placeholder="非活性" disabled />
   </>
 )

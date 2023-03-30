@@ -2,11 +2,12 @@ import React from 'react'
 import { getBorderColor, getShape, getWidth } from './Input.styles'
 import { InputProps } from './Input.types'
 
-const Input = ({ placeholder, borderColor, prefix, suffix, label, width, shape }: InputProps) => {
+const Input = ({ placeholder, borderColor, prefix, suffix, label, width, shape, disabled = false }: InputProps) => {
   const colorStyle = getBorderColor(borderColor)
   const widthStyle = getWidth(width)
   const shapeStyle = getShape(shape)
   const prefixStyle = 'flex items-center justify-center'
+
   return (
     <div className="relative">
       {label && <span className="block text-[12px]">{label}</span>}
@@ -20,6 +21,7 @@ const Input = ({ placeholder, borderColor, prefix, suffix, label, width, shape }
         placeholder={placeholder}
         className={`${colorStyle} ${widthStyle} ${shapeStyle}`}
         prefix={prefixStyle}
+        disabled={disabled}
       />
       {suffix && (
         <span className="absolute top-1/2 right-1 transform -translate-y-1/2">
