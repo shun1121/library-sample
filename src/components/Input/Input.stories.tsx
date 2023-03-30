@@ -11,11 +11,11 @@ export default {
 
 export const _Input: ComponentStory<typeof Input> = (args) => (
   <>
-    <Input borderColor="default" width='sm' />
+    <Input borderColor="default" width='sm' shape='default' />
     <br />
-    <Input borderColor="default" width='md' />
+    <Input borderColor="default" width='md' shape='rounded-md' />
     <br />
-    <Input borderColor="default" width='lg' />
+    <Input borderColor="default" width='lg' shape='rounded-full' />
     <br />
     <div className="flex gap-4">
       <Input placeholder="テキスト入力" borderColor="default" {...args} />
