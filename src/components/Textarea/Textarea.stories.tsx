@@ -10,6 +10,6 @@ export default {
 
 export const _Textarea: ComponentStory<typeof Textarea> = (args) => (
   <>
-    <Textarea placeholder='テキストエリア' row={3} {...args} />
+    <Textarea placeholder='テキストエリア' row={3} borderColor='default' {...args} />
   </>
 )
