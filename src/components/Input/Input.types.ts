@@ -7,5 +7,6 @@ export type InputProps = {
   suffix?: ReactNode
   label?: string
   width?: 'sm' | 'md' | 'lg'
+  shape?: 'default' | 'rounded-md' | 'rounded-lg' | 'rounded-full'
 }
 

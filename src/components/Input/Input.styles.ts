@@ -11,3 +11,11 @@ export const getWidth = (widthKey: InputProps['width']) =>
     ['md', 'w-60 px-4 block'],
     ['lg', 'w-full px-5 block'],
   ]).get(widthKey)
+
+export const getShape = (shapeKey: InputProps['shape']) =>
+  new Map<InputProps['shape'], string>([
+    ['default', 'rounded'],
+    ['rounded-md', 'rounded-md'],
+    ['rounded-lg', 'rounded-lg'],
+    ['rounded-full', 'rounded-full'],
+  ]).get(shapeKey)
