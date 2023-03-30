@@ -2,7 +2,7 @@ import React from 'react'
 import { getBorderColor, getShape, getWidth } from './Input.styles'
 import { InputProps } from './Input.types'
 
-const Input = ({ placeholder, borderColor, prefix, suffix, label, width, shape, disabled = false }: InputProps) => {
+const Input = ({ placeholder, borderColor, prefix, suffix, label, width, shape, disabled = false, ...props }: InputProps) => {
   const colorStyle = getBorderColor(borderColor)
   const widthStyle = getWidth(width)
   const shapeStyle = getShape(shape)
@@ -22,6 +22,7 @@ const Input = ({ placeholder, borderColor, prefix, suffix, label, width, shape, 
         className={`${colorStyle} ${widthStyle} ${shapeStyle}`}
         prefix={prefixStyle}
         disabled={disabled}
+        {...props}
       />
       {suffix && (
         <span className="absolute top-1/2 right-1 transform -translate-y-1/2">

@@ -9,5 +9,6 @@ export type InputProps = {
   width?: 'sm' | 'md' | 'lg'
   shape?: 'default' | 'rounded-md' | 'rounded-lg' | 'rounded-full'
   disabled?: boolean
+  onChange?: () => void
 }
 
