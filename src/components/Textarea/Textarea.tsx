@@ -4,16 +4,24 @@ import { TextareaProps } from "./Textarea.types";
 
 const TextArea: React.FC<TextareaProps> = ({
   placeholder,
-  row = 4,
-  borderColor
+  row,
+  borderColor,
+  value,
+  onChange
 }) => {
   const borderStyle = getBorderColor(borderColor)
+  console.log(value)
+  console.log(value?.length)
   return (
-    <textarea
-      placeholder={placeholder}
-      rows={row}
-      className={`${borderStyle}`}
-    />
+    <>
+      <textarea
+        value={value}
+        placeholder={placeholder}
+        rows={row}
+        className={`${borderStyle}`}
+        onChange={onChange}
+      />
+    </>
   );
 };
 
