@@ -8,3 +8,4 @@ export type InputProps = {
   label?: string
   width?: 'sm' | 'md' | 'lg'
 }
+
