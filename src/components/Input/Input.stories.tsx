@@ -11,11 +11,11 @@ export default {
 
 export const _Input: ComponentStory<typeof Input> = (args) => (
   <>
-    <Input borderColor="default" width='sm' shape='default' {...args} />
+    <Input borderColor="default" width="sm" shape="default" {...args} />
     <br />
-    <Input borderColor="default" width='md' shape='rounded-md' {...args} />
+    <Input borderColor="default" width="md" shape="rounded-md" {...args} />
     <br />
-    <Input borderColor="default" width='lg' shape='rounded-full' {...args} />
+    <Input borderColor="default" width="lg" shape="rounded-full" {...args} />
     <br />
     <div className="flex gap-4">
       <Input placeholder="テキスト入力" borderColor="default" {...args} />
@@ -23,8 +23,19 @@ export const _Input: ComponentStory<typeof Input> = (args) => (
       <Input borderColor="default" suffix={<GoSearch />} {...args} />
     </div>
     <br />
-    <Input borderColor="default" label="テキストを入力してください。" {...args} />
+    <Input
+      borderColor="default"
+      label="テキストを入力してください。"
+      {...args}
+    />
     <br />
-    <Input borderColor="default" width='sm' shape='rounded-md' placeholder="非活性" disabled {...args} />
+    <Input
+      borderColor="default"
+      width="sm"
+      shape="rounded-md"
+      placeholder="非活性"
+      disabled
+      {...args}
+    />
   </>
 )

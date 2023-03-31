@@ -1,6 +1,6 @@
-import React from "react";
-import { getBorderColor } from "./Textarea.styles";
-import { TextareaProps } from "./Textarea.types";
+import React from 'react'
+import { getBorderColor } from './Textarea.styles'
+import { TextareaProps } from './Textarea.types'
 
 const TextArea: React.FC<TextareaProps> = ({
   placeholder,
@@ -8,16 +8,15 @@ const TextArea: React.FC<TextareaProps> = ({
   borderColor,
   value,
   maxLength,
-  onChange
+  onChange,
 }) => {
   const borderStyle = getBorderColor(borderColor)
-  console.log(value)
-  console.log(value?.length)
-  const remainingCharacters = maxLength !== undefined && value ? maxLength - value.length : undefined;
+  const remainingCharacters =
+    maxLength !== undefined && value ? maxLength - value.length : maxLength
   return (
     <>
       {maxLength !== undefined && (
-        <span>あと{remainingCharacters}文字</span>
+        <span className="block">あと{remainingCharacters}文字</span>
       )}
       <textarea
         value={value}
@@ -27,12 +26,9 @@ const TextArea: React.FC<TextareaProps> = ({
         onChange={onChange}
         maxLength={maxLength}
       />
-      {maxLength !== undefined && (
-        <div>残り{remainingCharacters}文字</div>
-      )}
     </>
-  );
-};
+  )
+}
 
-export default TextArea;
+export default TextArea
 export type { TextareaProps }

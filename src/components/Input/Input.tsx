@@ -2,7 +2,17 @@ import React from 'react'
 import { getBorderColor, getShape, getWidth } from './Input.styles'
 import { InputProps } from './Input.types'
 
-const Input = ({ placeholder, borderColor, prefix, suffix, label, width, shape, disabled = false, ...props }: InputProps) => {
+const Input = ({
+  placeholder,
+  borderColor,
+  prefix,
+  suffix,
+  label,
+  width,
+  shape,
+  disabled = false,
+  ...props
+}: InputProps) => {
   const colorStyle = getBorderColor(borderColor)
   const widthStyle = getWidth(width)
   const shapeStyle = getShape(shape)
