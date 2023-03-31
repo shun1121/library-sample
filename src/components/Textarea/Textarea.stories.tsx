@@ -9,16 +9,29 @@ export default {
 } as ComponentMeta<typeof Textarea>
 
 export const _Textarea: ComponentStory<typeof Textarea> = (args) => {
-  const [value, setValue] = React.useState("");
+  const [value, setValue] = React.useState('')
   const onChange = (event: ChangeEvent<HTMLTextAreaElement>) => {
-    setValue(event.target.value);
-    args.onChange(event);
-  };
-  console.log(value)
+    setValue(event.target.value)
+    args.onChange(event)
+  }
   return (
     <>
-      <Textarea {...args} placeholder='テキストエリア' row={3} borderColor='default' value={value} onChange={onChange} />
-      <div>{value}</div>
+      <Textarea
+        {...args}
+        placeholder="テキストエリア"
+        row={2}
+        borderColor="default"
+      />
+      <br />
+      <Textarea
+        {...args}
+        placeholder="テキストエリア"
+        row={3}
+        borderColor="default"
+        maxLength={100}
+        value={value}
+        onChange={onChange}
+      />
     </>
   )
 }

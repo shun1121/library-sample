@@ -1,4 +1,4 @@
-import { TextareaProps } from "./Textarea.types";
+import { TextareaProps } from './Textarea.types'
 
 export const getBorderColor = (colorKey: TextareaProps['borderColor']) =>
   new Map<TextareaProps['borderColor'], string>([

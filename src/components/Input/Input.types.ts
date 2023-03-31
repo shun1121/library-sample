@@ -11,4 +11,3 @@ export type InputProps = {
   disabled?: boolean
   onChange?: () => void
 }
-
