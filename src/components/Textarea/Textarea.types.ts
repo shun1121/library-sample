@@ -6,4 +6,5 @@ export type TextareaProps = {
   borderColor?: string
   value?: string
   onChange: (event: ChangeEvent<HTMLTextAreaElement>) => void;
+  maxLength?: number
 }

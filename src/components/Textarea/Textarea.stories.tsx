@@ -15,10 +15,13 @@ export const _Textarea: ComponentStory<typeof Textarea> = (args) => {
     args.onChange(event);
   };
   console.log(value)
+  // const remainingCharacters = args.maxLength ? args.maxLength - value.length : undefined;
   return (
     <>
-      <Textarea {...args} placeholder='テキストエリア' row={3} borderColor='default' value={value} onChange={onChange} />
-      <div>{value}</div>
+      {/* {args.maxLength ? (<span>あと{remainingCharacters}文字</span>) : null}  */}
+      <Textarea {...args} placeholder='テキストエリア' row={3} borderColor='default' maxLength={100} value={value} onChange={onChange} />
+      {/* <div>{value.length}</div>
+      <span>あと{remainingCharacters}文字</span> */}
     </>
   )
 }
