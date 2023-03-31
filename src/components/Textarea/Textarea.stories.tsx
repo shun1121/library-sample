@@ -19,6 +19,13 @@ export const _Textarea: ComponentStory<typeof Textarea> = (args) => {
       <Textarea
         {...args}
         placeholder="テキストエリア"
+        row={2}
+        borderColor="default"
+      />
+      <br />
+      <Textarea
+        {...args}
+        placeholder="テキストエリア"
         row={3}
         borderColor="default"
         maxLength={100}
