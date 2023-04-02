@@ -2,14 +2,15 @@ import React from 'react'
 import { getBorderColor } from './Textarea.styles'
 import { TextareaProps } from './Textarea.types'
 
-const TextArea: React.FC<TextareaProps> = ({
+const Textarea = ({
   placeholder,
   row,
   borderColor,
   value,
   maxLength,
   onChange,
-}) => {
+  ...props
+}: TextareaProps) => {
   const borderStyle = getBorderColor(borderColor)
   const remainingCharacters =
     maxLength !== undefined && value ? maxLength - value.length : maxLength
@@ -25,10 +26,11 @@ const TextArea: React.FC<TextareaProps> = ({
         className={`${borderStyle}`}
         onChange={onChange}
         maxLength={maxLength}
+        {...props}
       />
     </>
   )
 }
 
-export default TextArea
+export default Textarea
 export type { TextareaProps }
