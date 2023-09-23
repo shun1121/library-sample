@@ -1,24 +1,95 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
+import React from 'react'
+import { ComponentStory, ComponentMeta } from '@storybook/react'
+import { FaPlusCircle } from 'react-icons/fa'
 
-import Button from './Button';
+import Button from './Button'
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: 'ReactComponentLibrary/Button',
   component: Button,
-} as ComponentMeta<typeof Button>;
+  argTypes: {
+    color: {
+      options: ['none', 'primary', 'success', 'danger'],
+      control: { type: 'select' },
+    },
+  },
+} as ComponentMeta<typeof Button>
 
-// More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
-
-export const HelloWorld = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-HelloWorld.args = {
-  label: 'Hello World',
-};
-
-export const ClickMe = Template.bind({});
-ClickMe.args = {
-  label: 'Click Me',
-};
+export const _Button: ComponentStory<typeof Button> = (args) => (
+  <>
+    <div className="flex gap-4">
+      <Button
+        {...args}
+        text="Button"
+        bgColor="primary"
+        size="md"
+        textSize="md"
+      />
+      <Button
+        {...args}
+        text="Button"
+        bgColor="primary"
+        size="md"
+        textSize="md"
+        shape="rounded-full"
+      />
+      <Button
+        {...args}
+        text="Button"
+        bgColor="none"
+        size="md"
+        textSize="md"
+        shape="default"
+        outline="outline-primary"
+        textColor="primary"
+      />
+    </div>
+    <br />
+    <Button
+      {...args}
+      text="Button"
+      bgColor="danger"
+      size="sm"
+      shape="default"
+      textSize="sm"
+    />
+    <br />
+    <Button
+      {...args}
+      text="Button"
+      bgColor="danger"
+      size="md"
+      shape="default"
+      textSize="md"
+    />
+    <br />
+    <Button
+      {...args}
+      text="Button"
+      bgColor="danger"
+      size="full"
+      shape="rounded-lg"
+      textSize="lg"
+    />
+    <br />
+    <Button
+      {...args}
+      text="Button"
+      bgColor="success"
+      size="sm"
+      shape="default"
+      textSize="sm"
+      suffix={<FaPlusCircle />}
+    />
+    <br />
+    <Button
+      {...args}
+      text="Button"
+      bgColor="success"
+      size="sm"
+      shape="rounded-full"
+      textSize="sm"
+      suffix={<FaPlusCircle />}
+    />
+  </>
+)
