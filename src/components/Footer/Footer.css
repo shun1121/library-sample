@@ -1,0 +1,16 @@
+.footer-wrap {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #383838;
+  color: white;
+}
+.footer-wrap a {
+  color: #2BA7FD;
+}
+.footer-wrap a:hover {
+  color: #9e67e1;
+}
+.footer-copyright {
+  text-align: center;
+  color: lightgray;
+}
